@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/adriffaud/docker-dev:latest
+          tags: ghcr.io/adriffaud/dev-docker:latest
