@@ -10,7 +10,7 @@ RUN apk add --no-cache zsh make curl wget git fd ripgrep tmux zip tzdata bat\
 RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 # Set up user
-RUN adduser -g '' -D adrien
+RUN adduser -g '' -D adrien -s /bin/zsh
 USER adrien
 ENV HOME /home/adrien
 ENV PATH "/usr/local/go/bin:$PATH"
